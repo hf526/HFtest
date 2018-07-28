@@ -6,7 +6,7 @@ from flask import (
 )
 
 from IRR.sign import sign_user
-from services.index_service import add_user
+# from services.index_service import add_user
 
 user_views = Blueprint('user_views',__name__,url_prefix='/')
 
