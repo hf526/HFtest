@@ -1,0 +1,38 @@
+{% extends "index_header.html" %}
+{% block body %}
+<div class="layui-carousel" id="carousel"style="text-align:center;">
+  <div carousel-item>
+    <a href="/" style=" background-image:url(../static/image/index.jpg);background-size: 100% 100%;"></a>
+    <a href="/" style=" background-image:url(../static/image/index2.jpg);background-size: 100% 100%;"></a>
+  </div>
+</div>
+  <div class="layui-row layui-bg-gray index_from login" style="display:none;">
+    <div class="layui-col-md12 ">
+      <div>
+            <fieldset class="layui-elem-field layui-field-title">
+              <legend>登录</legend>
+            </fieldset>
+          <form class="layui-form layui-form-pane" action="">
+            <div class="layui-form-item">
+              <label class="layui-form-label">账号</label>
+              <div class="layui-input-inline">
+                <input type="text" name="username" lay-verify="required"autocomplete="off" class="layui-input">
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">密码</label>
+              <div class="layui-input-inline">
+                <input type="password" name="password"autocomplete="off" class="layui-input">
+              </div>
+            </div>
+             <div class="layui-form-item">
+                <div class="layui-input-block">
+                  <button class="layui-btn" lay-submit="" lay-filter="demo1">立即登录</button>
+                </div>
+              </div>
+          </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
