@@ -15,6 +15,7 @@ user_views = Blueprint('user_views',__name__,url_prefix='/')
 def index():
         return render_template('index.html',title = '个人工具网')
 
+
 @user_views.route('/<name>', methods=['GET'])     #主页其他路由
 def other_index(name):
     if name == 'register':
