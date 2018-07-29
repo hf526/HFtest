@@ -12,6 +12,6 @@ if __name__=='__main__':
         debug=True,
         # host = '0.0.0.0'
     )
-    from werkzeug.contrib.fixers import ProxyFix
-    app.wsgi_app = ProxyFix(app.wsgi_app)
-    app.run(**config)
+    # from werkzeug.contrib.fixers import ProxyFix
+    # app.wsgi_app = ProxyFix(app.wsgi_app)
+    app.run(**config) 

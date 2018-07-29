@@ -5,25 +5,23 @@ from flask import (
     url_for
 )
 
-from IRR.sign import sign_user
-# from services.index_service import add_user
+from IRR.account import login_user
+from services.user import user
 
 user_views = Blueprint('user_views',__name__,url_prefix='/')
 
 
 @user_views.route('/', methods=['GET'])     #主页路由
 def index():
-        return render_template('index.html',title = '个人工具网')
+        return render_template('index.html')
 
 
-@user_views.route('/<name>', methods=['GET'])     #主页其他路由
-def other_index(name):
-    if name == 'register':
-        return render_template('index.html', title='注册')
-    elif name == 'login':
-        return render_template('index.html', title='登录')
-    else:
-        return redirect(url_for('index'))
+@user_views.route('/login', methods=['POST'])     #主页其他路由
+def other_index():
+    account = login_user()
+    u = user()
+    print(account)
+    return u.user_login(**account)
 
 
 # @user_views.route('/sign')    #注册路由

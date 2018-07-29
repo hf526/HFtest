@@ -1,9 +1,31 @@
-{% extends "index_header.html" %}
-{% block body %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>个人工具网</title>
+  <link rel="stylesheet" href="../static/layui/css/layui.css">
+
+</head>
+<body  class="layui-layout-body layui-anim layui-anim-fadein" id='by' style="height:100%" onload="myFunction()" >
+<div class="layui-layout layui-layout-admin" >
+      <div class="layui-header"style="position:fixed;width:100%;height:60px;">
+        <div class="layui-logo" style="width:10%">
+          <div class="layui-inline">
+            <img src="../static/image/1.jpg" class="layui-circle" style="width:50px">
+          </div>
+        </div>
+        <ul class="layui-nav layui-layout-right">
+          <li class="layui-nav-item"><a href="/">首页</a></li>
+          <li class="layui-nav-item"><a href="#login">登录</a></li>
+        </ul>
+      </div>
+
 <div class="layui-carousel" id="carousel"style="text-align:center;">
   <div carousel-item>
-    <a href="/" style=" background-image:url(../static/image/index.jpg);background-size: 100% 100%;"></a>
-    <a href="/" style=" background-image:url(../static/image/index2.jpg);background-size: 100% 100%;"></a>
+    <a href="/" style=" background-image:url(../static/image/1.webp);background-size: 100% 100%;"></a>
+    <a href="/" style=" background-image:url(../static/image/2.webp);background-size: 100% 100%;"></a>
+    <a href="/" style=" background-image:url(../static/image/3.webp);background-size: 100% 100%;"></a>
   </div>
 </div>
   <div class="layui-row layui-bg-gray index_from login" style="display:none;">
@@ -12,27 +34,76 @@
             <fieldset class="layui-elem-field layui-field-title">
               <legend>登录</legend>
             </fieldset>
-          <form class="layui-form layui-form-pane" action="">
+          <div class="layui-form layui-form-pane" >
             <div class="layui-form-item">
               <label class="layui-form-label">账号</label>
               <div class="layui-input-inline">
-                <input type="text" name="username" lay-verify="required"autocomplete="off" class="layui-input">
+                <input type="text" name="username" required lay-verify="required" placeholder="请输入账号" autocomplete="off" class="layui-input">
               </div>
             </div>
             <div class="layui-form-item">
               <label class="layui-form-label">密码</label>
               <div class="layui-input-inline">
-                <input type="password" name="password"autocomplete="off" class="layui-input">
+                <input type="password" name="password" required lay-verify="required" placeholder="请输入账号" autocomplete="off" class="layui-input">
               </div>
             </div>
              <div class="layui-form-item">
                 <div class="layui-input-block">
-                  <button class="layui-btn" lay-submit="" lay-filter="demo1">立即登录</button>
+                  <button class="layui-btn"  id="login">立即登录</button>
                 </div>
               </div>
-          </form>
+          </div>
       </div>
     </div>
   </div>
-{% endblock %}
 
+  <div class="layui-row layui-anim layui-anim-fadein layui-bg-gray">
+    <div class="layui-row layui-col-space15" style="padding:6%;margin:auto 10%;">
+        <div class="layui-col-md4">
+          <div class="layui-card">
+            <div class="layui-card-header">介绍</div>
+            <div class="layui-card-body">
+              欢迎注册，第一次做网站，可能比较差劲<br>
+              主要用来学习后端
+            </div>
+          </div>
+        </div>
+        <div class="layui-col-md4">
+          <div class="layui-card">
+            <div class="layui-card-header">解码功能</div>
+            <div class="layui-card-body">
+              主要有各种加密解码功能<br>
+              必须总需要去百度解码地址
+            </div>
+          </div>
+        </div>
+        <div class="layui-col-md4">
+          <div class="layui-card">
+            <div class="layui-card-header">日常工作</div>
+            <div class="layui-card-body">
+              主要解决日常工作数据库，接口等<br>
+              0.0
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="layui-row layui-bg-black"style="height:200px;border-top:#71a797 8px solid;">
+        <img src="../static/image/logo.gif" class="f_image">
+    <div class="layui-col-xs6 layui-col-md12">
+      <div class="grid-demo grid-demo-bg2">
+        <div class="footer " >
+            <p>Life was like a box of chocolates, you never know what you're gonna get. </p>
+            <br>
+            <p>版权所有追光者。部分资源使用了网友资源(如图片头像)，尊重原创者，特此说明！ </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<link rel="stylesheet" href="../static/css/index.css">
+<script src="../static/layui/layui.js"></script>
+<script src="../static/js/index.js"></script>
+</body>
+</html>
