@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf680686-af4b-475a-9446-10da70fbe976" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/测试是否会自动构建" afterPath="$PROJECT_DIR$/测试是否会自动构建" />
-    </list>
+    <list default="true" id="cf680686-af4b-475a-9446-10da70fbe976" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="5、Jenkins+git部署" pinned="false" current-in-tab="false">
+      <file leaf-file-name="5、Jenkins+git部署" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../笔记/部署/5、Jenkins+git部署">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="370">
-              <caret line="46" column="19" lean-forward="false" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+              <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -83,7 +81,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="测试是否会自动构建" pinned="false" current-in-tab="true">
+      <file leaf-file-name="测试是否会自动构建" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/测试是否会自动构建">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -152,7 +150,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="217" />
     <option name="y" value="36" />
     <option name="width" value="1614" />
@@ -258,7 +256,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="217" y="36" width="1614" height="1102" extended-state="1" />
+    <frame x="217" y="36" width="1614" height="1102" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29949874" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -593,6 +591,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/测试是否会自动构建">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="9" lean-forward="true" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../笔记/linux命令">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
@@ -604,15 +610,7 @@
     <entry file="file://$PROJECT_DIR$/../笔记/部署/5、Jenkins+git部署">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
-          <caret line="46" column="19" lean-forward="false" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/测试是否会自动构建">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="9" lean-forward="true" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+          <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="19" />
           <folding />
         </state>
       </provider>
