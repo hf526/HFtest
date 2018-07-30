@@ -18,6 +18,11 @@ class User(db.Model):
     update_time = db.Column(db.DateTime(),default=datetime.datetime.now)
 
 
+    def __init__(self, username, password,creat_time):
+        self.username = username
+        self.password = password
+        self.creat_time = creat_time
+
     def __repr__(self): # 定义返回的类型
         return '<User %r>' % self.username
 
@@ -27,6 +32,11 @@ class Project(db.Model):     #项目表
     project_name = db.Column(db.String(80),unique = True)
     user_id = db.Column(db.Integer, db.ForeignKey("user.id"))
     users = db.relationship("User", backref="project")
+
+    def __init__(self, project_name, user_id,users):
+        self.username = project_name
+        self.password = user_id
+        self.creat_time = users
 
     def __repr__(self):
         return '<user %r>' % self.name

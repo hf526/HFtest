@@ -1,10 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>主页</title>
+  <link rel="stylesheet" href="../static/layui/css/layui.css">
 </head>
-<body>
-666666666
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+  <div class="layui-header">
+    <div class="layui-logo" style="color:white">自动化测试平台</div>
+    <!-- 头部区域（可配合layui已有的水平导航） -->
+    <ul class="layui-nav layui-layout-left">
+      <li class="layui-nav-item"><a href="">控制台</a></li>
+      <li class="layui-nav-item"><a href="">用户管理</a></li>
+      <li class="layui-nav-item">
+        <a href="javascript:;">后台管理</a>
+        <dl class="layui-nav-child">
+          <dd><a href="">权限系统</a></dd>
+          <dd><a href="">信息管理</a></dd>
+        </dl>
+      </li>
+    </ul>
+    <ul class="layui-nav layui-layout-right">
+      <li class="layui-nav-item">
+        <a href="javascript:;">
+          <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+          admin
+        </a>
+        <dl class="layui-nav-child">
+          <dd><a href="">基本资料</a></dd>
+          <dd><a href="">安全设置</a></dd>
+        </dl>
+      </li>
+      <li class="layui-nav-item"><a href="">退出</a></li>
+    </ul>
+  </div>
+
+  <div class="layui-side  layui-bg-black ">
+    <div class="layui-side-scroll">
+      <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+      <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+        <li class="layui-nav-item layui-nav-itemed">
+          <a class="" href="javascript:;">项目</a>
+          <dl class="layui-nav-child">
+            <dd><a href="javascript:;">项目</a></dd>
+            <dd><a href="javascript:;">模块</a></dd>
+            <dd><a href="javascript:;">用例</a></dd>
+            <dd><a href="javascript:;">测试报告</a></dd>
+            <dd><a href="javascript:;">定时任务</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">API测试</a>
+          <dl class="layui-nav-child">
+            <dd><a href="javascript:;">数据库</a></dd>
+            <dd><a href="javascript:;">接口</a></dd>
+            <dd><a href="javascript:;">mock</a></dd>
+          </dl>
+        </li>
+           <li class="layui-nav-item">
+          <a href="javascript:;">自动化测试</a>
+          <dl class="layui-nav-child">
+            <dd><a href="javascript:;">元素</a></dd>
+            <dd><a href="javascript:;">操作</a></dd>
+            <dd><a href="javascript:;">兼容测试</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">常用资源</a>
+          <dl class="layui-nav-child">
+            <dd><a href="javascript:;">加密解密</a></dd>
+            <dd><a href="javascript:;">图片编辑</a></dd>
+            <dd><a href="javascript:;">json工具</a></dd>
+            <dd><a href="javascript:;">正则工具</a></dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="layui-body">
+    <!-- 内容主体区域 -->
+    <div style="padding: 15px;">内容主体区域</div>
+  </div>
+
+  <div class="layui-footer">
+    <!-- 底部固定区域 -->
+    © layui.com - 底部固定区域
+  </div>
+</div>
+<script src="../static/layui/layui.js"></script>
+<script src="../static/js/home.js"></script>
+<script>
+//JavaScript代码区域
+layui.use('element', function(){
+  var element = layui.element;
+
+});
+</script>
 </body>
 </html>
