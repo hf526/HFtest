@@ -10,6 +10,6 @@ md5.update(password)  # 进行加密
 password = md5.hexdigest()
 print(username, password)
 
-u = user()
+u = user.user()
 
 u.add_user(username=username,password=password)
