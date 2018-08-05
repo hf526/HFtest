@@ -1,0 +1,65 @@
+ <div class="project_nav">
+        <ol>
+            <li><i class="layui-icon layui-icon-home"></i><a>主页</a></li>
+            <li><i class="layui-icon layui-icon-right"></i><a>项目</a></li>
+            <div class="new">
+                <a class="layui-btn">新增项目</a>
+            </div>
+        </ol>
+ </div>
+
+<div class="layui-card" >
+    <div class="project_list" >
+            <div class="project_input">
+                    <label>项目名称</label>
+                    <div class="layui-input-inline">
+                      <input type="text" name="username" class="layui-input">
+                    </div>
+                    <label>项目负责人</label>
+                    <div class="layui-input-inline">
+                      <input type="text" name="project_man" class="layui-input">
+                    </div>
+                    <button class="layui-btn">查询</button>
+            </div>
+            <table id="demo" lay-filter="test"></table>
+    </div>
+
+    <div class="add_project" style="display:none;">
+        <fieldset class="layui-elem-field layui-field-title">
+          <legend>项目信息</legend>
+        </fieldset>
+          <div class="layui-card-body">
+             <div class="layui-form" >
+                <div class="layui-form-item">
+                    <label class="layui-form-label">项目名称</label>
+                    <div class="layui-input-inline">
+                      <input type="text" name="project_name" required  lay-verify="required" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">启用状态</label>
+                    <div class="layui-input-block">
+                      <input type="checkbox" name="switch" lay-skin="switch" checked lay-text="启用|停用">
+                    </div>
+                </div>
+                <div class="layui-form-item layui-form-text">
+                    <label class="layui-form-label">项目描述</label>
+                    <div class="layui-input-block">
+                      <input name="miaoshu" class="layui-textarea">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                      <button class="layui-btn">保存</button>
+                      <button class="layui-btn layui-btn-primary">取消</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

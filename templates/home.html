@@ -40,15 +40,15 @@
   <div class="layui-side  layui-bg-black ">
     <div class="layui-side-scroll">
       <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
-      <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+      <ul class="layui-nav layui-nav-tree"  lay-filter="hometab">
         <li class="layui-nav-item layui-nav-itemed">
           <a class="" href="javascript:;">项目</a>
           <dl class="layui-nav-child">
-            <dd><a href="javascript:;">项目</a></dd>
-            <dd><a href="javascript:;">模块</a></dd>
-            <dd><a href="javascript:;">用例</a></dd>
-            <dd><a href="javascript:;">测试报告</a></dd>
-            <dd><a href="javascript:;">定时任务</a></dd>
+            <dd><a href="#project">项目</a></dd>
+            <dd><a href="#model">模块</a></dd>
+            <dd><a href="#case">用例</a></dd>
+            <dd><a href="#report">测试报告</a></dd>
+            <dd><a href="#task">定时任务</a></dd>
           </dl>
         </li>
         <li class="layui-nav-item">
@@ -80,9 +80,9 @@
     </div>
   </div>
 
-  <div class="layui-body">
+  <div class="layui-body" style="background:#e6e6e6;">
     <!-- 内容主体区域 -->
-    <div style="padding: 15px;">内容主体区域</div>
+
   </div>
 
   <div class="layui-footer">
@@ -91,13 +91,6 @@
   </div>
 </div>
 <script src="../static/layui/layui.js"></script>
-<script src="../static/js/home.js"></script>
-<script>
-//JavaScript代码区域
-layui.use('element', function(){
-  var element = layui.element;
-
-});
-</script>
+<script src="../static/model/home/home.js"></script>
 </body>
 </html>

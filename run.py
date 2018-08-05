@@ -1,8 +1,10 @@
 #coding=utf-8
-from flask import Flask
-from user_views import user_views  # 导入蓝图模块
+import os
 from datetime import timedelta
-import  os
+
+from flask import Flask
+
+from routes.index_routes import user_views  # 导入蓝图模块
 
 app = Flask(__name__)   #实例化app
 app.register_blueprint(user_views)   #加载蓝图
