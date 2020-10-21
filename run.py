@@ -16,7 +16,7 @@ app.config['PERMANENT_SESSION_LIFETIME']=timedelta(days=7)
 if __name__=='__main__':
     config = dict(
         debug=True,
-        # host = '0.0.0.0'
+        host = '0.0.0.0'
     )
     # from werkzeug.contrib.fixers import ProxyFix
     # app.wsgi_app = ProxyFix(app.wsgi_app)
